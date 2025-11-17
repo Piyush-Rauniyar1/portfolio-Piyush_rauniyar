@@ -123,6 +123,8 @@ body {
     box-shadow: none;
     z-index: 100;
     margin-left: auto;
+    display: flex;
+    align-items: center;
 }
 
 .nav-list {
@@ -227,17 +229,13 @@ section h2::after {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
+    /* Align to the top so previews and details line up consistently */
     align-items: start;
 }
 
-.project-item:nth-child(even) {
-    grid-template-columns: 1fr 1fr;
-    direction: rtl;
-}
-
-.project-item:nth-child(even) > * {
-    direction: ltr;
-}
+/* Swap the visual order for even items using order, not direction */
+.project-item:nth-child(even) .project-preview { order: 2; }
+.project-item:nth-child(even) .project-details { order: 1; }
 
 .project-preview {
     border-radius: 10px;
@@ -562,11 +560,12 @@ section h2::after {
 
     .project-item:nth-child(even) {
         grid-template-columns: 1fr;
-        direction: ltr;
     }
 
-    .project-item:nth-child(even) > * {
-        direction: ltr;
+    /* Reset ordering on small screens so items stack naturally */
+    .project-item .project-preview,
+    .project-item .project-details {
+        order: initial;
     }
 
     .project-buttons {
