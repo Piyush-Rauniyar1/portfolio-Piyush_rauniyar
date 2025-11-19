@@ -1,6 +1,4 @@
-/* ========================
-   CSS Reset & Base Styles
-   ======================== */
+
 
 * {
     margin: 0;
@@ -59,7 +57,7 @@ body {
     flex-shrink: 0;
 }
 
-/* Profile photo next to logo */
+
 .profile-photo {
     width: 56px;
     height: 56px;
@@ -69,7 +67,7 @@ body {
     box-shadow: 0 4px 14px rgba(0,0,0,0.5);
 }
 
-/* About section layout: photo + text */
+
 .about-content {
     display: grid;
     grid-template-columns: 220px 1fr;
@@ -79,10 +77,11 @@ body {
 }
 
 .about .about-photo {
-    width: 220px;
-    height: 220px;
-    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
     object-fit: cover;
+    object-position: center center;
     border: 4px solid rgba(102,126,234,0.28);
     box-shadow: 0 12px 36px rgba(0,0,0,0.65);
 }
@@ -102,15 +101,6 @@ body {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     white-space: nowrap;
-}
-
-.tagline {
-    font-size: 0.9rem;
-    font-weight: 300;
-    opacity: 0.7;
-    display: inline;
-    margin: 0;
-    color: #a0a0a0;
 }
 
 /* ========================
@@ -229,7 +219,7 @@ section h2::after {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
-    /* Align to the top so previews and details line up consistently */
+
     align-items: start;
 }
 
@@ -373,31 +363,6 @@ section h2::after {
     outline-offset: 2px;
 }
 
-/* GitHub icon link next to project buttons */
-.github-link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 6px;
-    border-radius: 8px;
-    border: 1px solid transparent;
-    transition: transform 0.15s ease, box-shadow 0.15s ease;
-}
-
-.github-link img {
-    display: block;
-    width: 28px;
-    height: 28px;
-    object-fit: contain;
-    filter: none; /* show original colored GitHub mark */
-}
-
-.github-link:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 18px rgba(0,0,0,0.4);
-    border-color: rgba(102,126,234,0.5);
-}
-
 /* Small GitHub icon used inside Source Code buttons */
 .btn-github-icon {
     width: 10px;
@@ -532,10 +497,6 @@ section h2::after {
         font-size: 2rem;
     }
 
-    .tagline {
-        font-size: 1rem;
-    }
-
     section h2 {
         font-size: 2rem;
     }
@@ -580,10 +541,6 @@ section h2::after {
 @media (max-width: 480px) {
     .logo {
         font-size: 1.5rem;
-    }
-
-    .tagline {
-        font-size: 0.9rem;
     }
 
     section {
