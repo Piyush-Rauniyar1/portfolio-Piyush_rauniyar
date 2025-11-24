@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission Details - Piyush Rauniyar</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" href='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="%230a0a0a"/><circle cx="50" cy="36" r="20" fill="%23667eea"/><text x="50" y="72" font-size="28" text-anchor="middle" fill="white" font-family="Segoe UI, Tahoma, Geneva, Verdana, sans-serif">PR</text></svg>'>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="header-left">
+                <h1 class="logo">Piyush Rauniyar</h1>
+            </div>
+            <nav class="navbar-inline">
+                <ul class="nav-list">
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="form-details-section">
+            <div class="container">
+                <h2>Form Submission Details</h2>
+                
+                <div id="errorContainer" class="error-container" style="display: none;">
+                    <p id="errorMessage"></p>
+                    <a href="index.html#contact" class="btn-primary" style="display: inline-block; margin-top: 20px; text-decoration: none;">← Back to Contact Form</a>
+                </div>
+
+                <div id="successContainer" class="success-container" style="display: none;">
+                    <div class="form-details-card">
+                        <div class="detail-item">
+                            <label class="detail-label">Name:</label>
+                            <p id="displayName" class="detail-value"></p>
+                        </div>
+                        <div class="detail-item">
+                            <label class="detail-label">Email:</label>
+                            <p id="displayEmail" class="detail-value"></p>
+                        </div>
+                        <div class="detail-item">
+                            <label class="detail-label">Message:</label>
+                            <p id="displayMessage" class="detail-value"></p>
+                        </div>
+                        <div class="detail-item">
+                            <label class="detail-label">Submitted At:</label>
+                            <p id="displayTimestamp" class="detail-value"></p>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button id="downloadBtn" class="btn-secondary" style="display: inline-block; padding: 12px 24px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; border-radius: 5px; font-weight: 600; cursor: pointer; text-decoration: none; margin-right: 10px;">📥 Download as Text</button>
+                        <a href="index.html#contact" class="btn-secondary" style="display: inline-block; padding: 12px 24px; text-decoration: none; background-color: transparent; border: 2px solid rgba(102, 126, 234, 0.4); color: #e0e0e0;">← Back to Contact Form</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="year">2025</span> Piyush Rauniyar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/form-details.js"></script>
+</body>
+</html>

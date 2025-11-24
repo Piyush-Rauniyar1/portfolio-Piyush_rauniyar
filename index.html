@@ -22,12 +22,12 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+            <div class="header-actions">
+                <button id="themeToggle" class="theme-toggle" aria-pressed="false" aria-label="Toggle light and dark theme">🌙</button>
+            </div>
         </div>
     </header>
-
-    <!-- Main Content -->
     <main class="main-content">
-        <!-- About Section -->
         <section id="about" class="about">
             <div class="container">
                 <h2>About Me</h2>
@@ -40,14 +40,12 @@
                 </div>
             </div>
         </section>
-
-        <!-- Projects Section -->
         <section id="projects" class="projects">
             <div class="container">
                 <h2>My Projects</h2>
                 <div class="projects-list">
                     <!-- Project 1 -->
-                    <article class="project-item">
+                    <article class="project-item" data-live="https://piyushrauniyarweather.infinityfreeapp.com/?i=1" tabindex="0" role="link" aria-label="Open Weather Search Application live demo">
                         <div class="project-preview">
                             <img src="images/project1.png" alt="Project 1 Screenshot" class="project-preview-image">
                         </div>
@@ -66,36 +64,34 @@
                                 <span class="tag">OpenWeatherMap API</span>
                             </div>
                             <div class="project-buttons">
-                                <a href="https://piyushrauniyarweather.infinityfreeapp.com/?i=1" target="_blank" rel="noopener" class="btn-primary">🔗 Live Demo</a>
+                                <button type="button" class="btn-primary btn-live">🔗 Live Demo</button>
                                 <a href="https://github.com/RAUNified/weather-app" target="_blank" rel="noopener" class="btn-secondary"><img class="btn-github-icon" src="images/github-mark.svg" alt="GitHub">Source Code</a>
-                                
                             </div>
                         </div>
                     </article>
-                    <article class="project-item">
+                    <article class="project-item" data-live="#" tabindex="0" role="link" aria-label="Open Project 2 live demo">
                         <div class="project-preview">
                             <img src="images/project2.png" alt="Project 2 Screenshot" class="project-preview-image">
                         </div>
                         <div class="project-details">
                             <div class="project-header">
-                                <h3 class="project-title">Project 2</h3>
+                                <h3 class="project-title">Asset managment software</h3>
                                 <span class="project-year">📅 2024</span>
                             </div>
-                            <p class="project-description">Description for your second project goes here. Highlight the technologies used and the key features of your application.</p>
+                            <p class="project-description"> this softwarehelps institution to manage it hardware assets efficiently. </p>
                             <div class="project-tags">
                                 <span class="tech" title="HTML5"><img class="tech-icon" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML5"></span>
                                 <span class="tech" title="CSS3"><img class="tech-icon" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="CSS3"></span>
                                 <span class="tech" title="JavaScript"><img class="tech-icon" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript"></span>
                             </div>
                             <div class="project-buttons">
-                                <a href="#" class="btn-primary">🔗 Live Demo</a>
-                                <a href="#" class="btn-secondary"><img class="btn-github-icon" src="images/github-mark.svg" alt="GitHub">Source Code</a>
+                                <button type="button" class="btn-primary btn-live">🔗 Live Demo</button>
+                                <a href="#" class="btn-secondary"><img class="btn-github-icon" src="images/github-mark.svg" alt="GitHub"> Source Code</a>
                             </div>
                         </div>
                     </article>
 
-                    <!-- Project 3 -->
-                    <article class="project-item">
+                    <article class="project-item" data-live="#" tabindex="0" role="link" aria-label="Open Project 3 live demo">
                         <div class="project-preview">
                             <img src="images/project3.png" alt="Project 3 Screenshot" class="project-preview-image">
                         </div>
@@ -111,7 +107,7 @@
                                 <span class="tech" title="JavaScript"><img class="tech-icon" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript"></span>
                             </div>
                             <div class="project-buttons">
-                                <a href="#" class="btn-primary">🔗 Live Demo</a>
+                                <button type="button" class="btn-primary btn-live">🔗 Live Demo</button>
                                 <a href="#" class="btn-secondary"><img class="btn-github-icon" src="images/github-mark.svg" alt="GitHub"> Source Code</a>
                             </div>
                         </div>
@@ -119,47 +115,168 @@
                 </div>
             </div>
         </section>
+        <section id="slider" class="image-slider">
+            <div class="container">
+                <h2>Featured Screenshots</h2>
+                <div class="slider-wrapper">
+                    <div class="slider-track" aria-live="polite">
+                        <div class="slide">
+                            <img src="images/project1.png" alt="Project 1 screenshot">
+                        </div>
+                        <div class="slide">
+                            <img src="images/project2.png" alt="Project 2 screenshot">
+                        </div>
+                        <div class="slide">
+                            <img src="images/project3.png" alt="Project 3 screenshot">
+                        </div>
+                        
+                    </div>
 
-        
+                    <button class="slider-btn slider-prev" aria-label="Previous slide">◀</button>
+                    <button class="slider-btn slider-next" aria-label="Next slide">▶</button>
 
-        <!-- Contact Section -->
+                    <div class="slider-indicators" role="tablist" aria-label="Slide indicators">
+                        <button class="indicator" data-index="0" aria-label="Go to slide 1"></button>
+                        <button class="indicator" data-index="1" aria-label="Go to slide 2"></button>
+                        <button class="indicator" data-index="2" aria-label="Go to slide 3"></button>
+                        <button class="indicator" data-index="3" aria-label="Go to slide 4"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2>My Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <h3>HTML5</h3>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-percent="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <h3>CSS3</h3>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-percent="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <h3>JavaScript</h3>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-percent="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <h3>Responsive Design</h3>
+                            <span class="skill-percentage">88%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-percent="88"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <h3>Web Performance</h3>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-percent="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <h3>Git & Version Control</h3>
+                            <span class="skill-percentage">82%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-percent="82"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="media" class="media-section">
+            <div class="container">
+                <h2>Media Showcase</h2>
+                <p style="text-align:center;color:#a0a0a0;max-width:800px;margin:0 auto 24px;">A short video, an audio sample, and a small canvas demo using HTML5.</p>
+                <div class="media-grid">
+                    <div class="media-card">
+            <h3>Demo Video</h3>
+            <video 
+                 controls
+                 preload="metadata"
+                 class="media-video"
+                 poster="images/video-thumbnail.jpg"
+                 tabindex="0"
+    >
+        <source src="media/video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+                    <div class="media-card">
+                        <h3>Demo Audio</h3>
+                        <audio controls class="media-audio" preload="metadata">
+                            <source src="media/bonuschowchow.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+
+                    <div class="media-card">
+                        <h3>Canvas Demo</h3>
+                        <canvas id="demoCanvas" width="480" height="270" aria-label="Canvas demo showing a bouncing ball"></canvas>
+                        <p class="canvas-instructions">(Click canvas to pause/resume animation)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="step8" class="step-section">
+    <div class="container">
+       
         <section id="contact" class="contact">
             <div class="container">
                 <h2>Get In Touch</h2>
                 <p>I'd love to hear from you! Feel free to send me a message using the form below.</p>
-                <form class="contact-form" action="#" method="POST">
+                <form id="contactForm" class="contact-form">
                     <div class="form-group">
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name" required aria-required="true" placeholder="Your full name">
+                        <span class="error-message" id="nameError"></span>
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
                         <input type="email" id="email" name="email" required aria-required="true" placeholder="you@example.com">
+                        <span class="error-message" id="emailError"></span>
                     </div>
                     <div class="form-group">
                         <label for="message">Message</label>
                         <textarea id="message" name="message" rows="5" required aria-required="true" placeholder="Write your message here"></textarea>
+                        <span class="error-message" id="messageError"></span>
                     </div>
+                    <div id="successMessage" class="success-message" style="display:none;">✓ Form submitted successfully! Redirecting...</div>
                     <button type="submit" class="btn" aria-label="Send message">Send Message</button>
                 </form>
             </div>
         </section>
     </main>
-
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <p>&copy; <span id="year">2025</span> Piyush Rauniyar. All rights reserved.</p>
         </div>
     </footer>
 
-    <script>
-        // Update footer year dynamically
-        (function(){
-            var y = new Date().getFullYear();
-            var el = document.getElementById('year');
-            if(el) el.textContent = y;
-        })();
-    </script>
+    <button id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top">↑</button>
+    <script src="js/script.js"></script>
 </body>
 </html>
